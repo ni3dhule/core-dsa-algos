@@ -6,4 +6,7 @@ public class MathMaxUtil {
 		return Math.max(iFirst, iSecond);
 	}
 	
+	public static int findMin(int iFirst, int iSecond) {
+		return Math.min(iFirst, iSecond);
+	}
 }

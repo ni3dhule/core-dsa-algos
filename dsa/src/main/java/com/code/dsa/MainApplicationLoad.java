@@ -10,6 +10,9 @@ public class MainApplicationLoad {
 		int iSecond = 30;
 		int iMax = MathMaxUtil.findMax(iFirst, iSecond);
 		System.out.println("Maximum Number is : "+iMax);
+		
+		int iMin = MathMaxUtil.findMin(iFirst, iSecond);
+		System.out.println("Minimum Number is : "+iMin);
 	}
 
 }
