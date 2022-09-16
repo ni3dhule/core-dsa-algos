@@ -1,5 +1,7 @@
 package com.code.dsa;
 
+import java.util.Arrays;
+
 import com.code.util.MathMaxUtil;
 
 public class MainApplicationLoad {
@@ -24,6 +26,10 @@ public class MainApplicationLoad {
         System.out.println("Logarithm of x is: " + Math.log(x));   
         System.out.println("Logarithm of y is: " + Math.log(y)); 
         System.out.println("Power of x and y is: " + Math.pow(x, y));
+        
+        int[] inputs = {10, 20, 30, 40, 50};
+        System.out.println("Average of : "+Arrays.toString(inputs)+" is "+MathMaxUtil.avg(inputs));
+        
 	}
 
 }
