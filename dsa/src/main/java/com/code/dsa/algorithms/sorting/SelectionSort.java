@@ -19,7 +19,7 @@ public class SelectionSort {
 			arr[i] = tmp;
 		}
 		
-		System.out.println("Sorted Array is : "+Arrays.toString(arr));
+		System.out.println("Array after Selection sort : "+Arrays.toString(arr));
 		
 	}
 }
