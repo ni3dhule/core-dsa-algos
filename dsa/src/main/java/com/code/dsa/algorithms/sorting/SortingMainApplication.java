@@ -5,13 +5,10 @@ import java.util.Arrays;
 public class SortingMainApplication {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// int arr[] = {64,25,12,22,11};
-		int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
+		int arrSelectionSort[] = { 64, 34, 25, 12, 22, 11, 90 };
 		System.out.println("========================================================================================");
-		System.out.println("Array before Selection Sort : "+Arrays.toString(arr));
-		SelectionSort.sort(arr);
-
+		System.out.println("Array before Selection Sort : "+Arrays.toString(arrSelectionSort));
+		SelectionSort.sort(arrSelectionSort);
 		System.out.println("========================================================================================");
 		//int arrQuickSort[] = { 64, 34, 25, 12, 22, 11, 90 };
 		int arrQuickSort[] = {100, 12, 100, 1, 1, 12, 100, 1, 12, 100, 1, 1};
@@ -23,6 +20,11 @@ public class SortingMainApplication {
 		System.out.println("Array before Merge sort : "+ Arrays.toString(arrMergeSort));
 		MergeSort.sort(arrMergeSort, 0, arrMergeSort.length - 1);
 		System.out.println("Array after Merge sort : "+ Arrays.toString(arrMergeSort));
+		System.out.println("========================================================================================");
+		int arrBubbleSort[] = { -2, 45, 0, 11, -9 };
+		System.out.println("Array before Bubble sort : "+ Arrays.toString(arrBubbleSort));
+		BubbleSort.sort(arrBubbleSort);
+		System.out.println("Array after Bubble sort : "+ Arrays.toString(arrBubbleSort));
 		System.out.println("========================================================================================");
 	}
 }
