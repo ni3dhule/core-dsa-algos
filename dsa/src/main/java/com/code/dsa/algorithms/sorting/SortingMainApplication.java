@@ -26,5 +26,10 @@ public class SortingMainApplication {
 		BubbleSort.sort(arrBubbleSort);
 		System.out.println("Array after Bubble sort : "+ Arrays.toString(arrBubbleSort));
 		System.out.println("========================================================================================");
+		int arrInsertSort[] = { 64, 34, 25, 12, 22, 11, 90, 34, 64 };
+		System.out.println("Array before Insertion sort : "+ Arrays.toString(arrInsertSort));
+		InsertionSort.sort(arrInsertSort);
+		System.out.println("Array after Insertion sort : "+ Arrays.toString(arrInsertSort));
+		System.out.println("========================================================================================");
 	}
 }
