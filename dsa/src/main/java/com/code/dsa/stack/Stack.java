@@ -5,7 +5,7 @@ public class Stack {
     int[] array = new int[MAX_STACK_SIZE];
     int iTop = -1;
     public void push(int iItem){
-        if(array.length == MAX_STACK_SIZE-1){
+        if(iTop == MAX_STACK_SIZE-1){
             System.out.println("Stack is overflow !!!");
             return;
         }
@@ -13,8 +13,9 @@ public class Stack {
     }
 
     public int pop(){
-        if(iTop == -1 && array.length == 0){
+        if(iTop == -1){
             System.out.printf("Stack is empty, can't perform pop operation.");
+            return -1;
         }
         int item = array[iTop--];
         return item;
@@ -23,7 +24,7 @@ public class Stack {
     public void show(){
         System.out.println();
         System.out.printf("Stack Elements : [ ");
-        for(int i=0; i<array.length;i++){
+        for(int i=0; i <= iTop; i++){
             System.out.printf(" "+array[i]);
         }
         System.out.printf(" ]");
